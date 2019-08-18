@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="keywords"
+          content="jQAssistant, Plugin, softvis-research, Uni, University, Universität, Leipzig, Visual Software Analytics">
+    <title>jQAssistant Plugins by softvis-research</title>
+    <meta name="description" content="Find several plugins for jQAssistant written by Visual Software Analytics.">
+    <link rel="icon" type="image/png" href="img/favicon.png" sizes="32x32">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ng-tags-input/3.2.0/ng-tags-input.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ng-tags-input/3.2.0/ng-tags-input.min.js"></script>
+
+    <script src="app.js"></script>
+    <script src="index.controller.js"></script>
+</head>
+
+<body class="container" ng-app="softvisApp" ng-cloak ng-controller="indexController">
+
+<img id="icon" src="img/icon.png" alt="">
+<h1>jQAssistant Plugins by Visual Software Analytics</h1>
+
+<section id="filter-section" class="filter-section">
+
+    <h2>Filter</h2>
+
+    <div>
+        <tags-input ng-model="selectedTags" add-from-autocomplete-only="true" class="tags-input"
+                    placeholder="Add a filter">
+            <auto-complete source="loadTags($query)" min-length="1"></auto-complete>
+        </tags-input>
+    </div>
+
+</section>
+
+<section id="plugin-section" class="plugin-section">
+
+    <h2>Plugins</h2>
+
+    <div ng-repeat="project in filteredPlugins">
+        <h3>{{project.name}}</h3>
+        <p>{{project.description}}</p>
+
+        <div ng-repeat="plugin in project.entries" class="plugin-container">
+            <h4>{{plugin.name}}</span></h4>
+
+            <div>
+                <p class="status">Status: <span
+                        ng-style="{ color: plugin.status === 'Development' ? 'orange' : 'green' }">{{plugin.status}}</span>
+                </p>
+            </div>
+
+            <p>
+                <span ng-repeat="tag in plugin.tags" class="tag">{{tag}}</span>
+            </p>
+
+            <p>{{plugin.description}}</p>
+
+            <div ng-if="plugin.downloads">
+                <p style="margin-bottom: 5px;">Downloads:</p>
+
+                <ul>
+                    <li ng-repeat="download in plugin.downloads">jQAssistant {{download.jqassistantVersion}} - <a
+                            href="{{download.url}}">{{download.url}}</a></li>
+                </ul>
+            </div>
+
+
+            <p>Website: <a href="{{plugin.url}}">{{plugin.url}}</a></p>
+            <p>Maintainer: <a target="_blank" href="{{plugin.maintainedBy.website}}">{{plugin.maintainedBy.name}}</a>
+            </p>
+        </div>
+    </div>
+
+</section>
+
+
+<section id="maintainer-section" class="maintainer-section">
+
+    <h2>Maintainer</h2>
+
+    <div ng-repeat="maintainer in maintainers">
+        <h3>{{maintainer.name}}</h3>
+        <p>Website: <a target="_blank" href="{{maintainer.website}}">{{maintainer.website}}</a></p>
+    </div>
+
+</section>
+
+<footer id="footer-section" class="footer-section clearfix">
+
+    <ul class="clearfix">
+        <li>
+            <a href="http://home.uni-leipzig.de/svis/impressum/" target="_blank">
+                Impressum </a>
+        </li>
+        <li>
+            <a href="http://home.uni-leipzig.de/svis/privacy-policy/" target="_blank">
+                Privacy Policy </a>
+        </li>
+        <li>
+            <a href="https://www.wifa.uni-leipzig.de/iwi/se/forschung/visual-software-analytics.html" target="_blank">
+                Leipzig University </a>
+        </li>
+    </ul>
+
+</footer>
+</body>
+
+

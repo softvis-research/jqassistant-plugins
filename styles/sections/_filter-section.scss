@@ -1,0 +1,30 @@
+.filter-section {
+
+  .tags-input {
+
+    height: 40px;
+
+    input, li {
+
+      height: 33px;
+    }
+
+    .tag-item {
+
+      padding: 5px 15px 5px 15px !important;
+
+      border-radius: 50px !important;
+      border: none !important;
+
+      background: none !important;
+      background-color: $primary-color !important;
+      color: white;
+
+      a {
+        color: white !important;
+      }
+    }
+  }
+
+  margin-bottom: 50px;
+}

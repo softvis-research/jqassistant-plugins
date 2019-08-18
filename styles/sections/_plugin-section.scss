@@ -1,0 +1,44 @@
+.plugin-section {
+
+  .tag {
+
+    background-color: $primary-color;
+    color: white;
+    border-radius: 50px;
+    padding: 5px 15px 5px 15px;
+    margin-right: 20px;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin-bottom: 35px;
+    text-align: center;
+    background-color: $primary-color;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  margin-bottom: 50px;
+
+  .status {
+    margin-top: 0;
+  }
+
+  .plugin-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  li {
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  li:before {
+    content: "-";
+    padding-right: 10px;
+  }
+;
+}

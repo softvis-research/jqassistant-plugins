@@ -1,0 +1,192 @@
+{
+  "plugins": [
+    {
+      "name": "jQAssistant Core Distribution",
+      "description": "",
+      "entries": [
+        {
+          "name": "Java Plugin",
+          "description": "Provides scanners and rules for Java Bytecode.",
+          "tags": [
+            "Plugin",
+            "Java",
+            "ByteCode",
+            "Scanner",
+            "Rules"
+          ],
+          "url": "http://buschmais.github.io/jqassistant/doc/${jQACoreVersion}/#_java_plugin",
+          "maintainedBy": "jQACore",
+          "status": "Stable"
+        },
+        {
+          "name": "XML Plugin",
+          "tags": [
+            "Plugin",
+            "Scanner",
+            "XML"
+          ],
+          "description": "Provides scanners for XML documents",
+          "url": "http://buschmais.github.io/jqassistant/doc/${jQACoreVersion}/#_xml_plugin",
+          "maintainedBy": "jQACore",
+          "status": "Stable"
+        }
+      ]
+    },
+    {
+      "name": "jQAssistant Contribution Project",
+      "description": "The research group \"Visual Software Analytics\" develops and evaluates tools for exploring complex software systems in 2D, 3D and virtual reality. We combine findings and methods from the fields of software analytics, software visualization, data science, and empirical software engineering to extract, visualize, and analyze software-related data. All tools, such as Getaviz or jQA-Dashboard, are available as open source.",
+      "entries": [
+        {
+          "name": "Java Source Plugin",
+          "tags": [
+            "Plugin",
+            "Java",
+            "Source",
+            "Scanner"
+          ],
+          "description": "This is a java source parser for jQAssistant. It enables jQAssistant to scan and to analyze Java source code files.",
+          "maintainedBy": "SoftVisResearch",
+          "url": "https://github.com/softvis-research/jqa-javasrc-plugin",
+          "status": "Development"
+        },
+        {
+          "name": "Kieker Plugin",
+          "tags": [
+            "Plugin",
+            "Kieker",
+            "Stacktrace",
+            "Scanner"
+          ],
+          "description": "This is a stack trace parser for jQAssistant. It enables jQAssistant to scan and to analyze Kieker trace event logs.",
+          "maintainedBy": "SoftVisResearch",
+          "url": "https://github.com/softvis-research/jqa-kieker-plugin",
+          "status": "Development"
+        },
+        {
+          "name": "Jira Plugin",
+          "tags": [
+            "Plugin",
+            "Jira",
+            "Project Management",
+            "Issue",
+            "Scanner"
+          ],
+          "description": "This is a Jira parser for jQAssistant. It enables jQAssistant to scan and to analyze data from Jira.",
+          "maintainedBy": "SoftVisResearch",
+          "url": "https://github.com/softvis-research/jqa-jira-plugin",
+          "status": "Stable"
+        },
+        {
+          "name": "jQAssistant Dashboard",
+          "tags": [
+            "Dashboard",
+            "UI",
+            "Visualisation",
+            "Analysis"
+          ],
+          "description": "Dashboard for analyzing and visualizing software artifacts' data scanned with jQAssistant and stored in a Neo4j graph database.",
+          "maintainedBy": "SoftVisResearch",
+          "url": "https://github.com/softvis-research/jqa-dashboard",
+          "status": "Stable"
+        },
+        {
+          "name": "Python Plugin",
+          "tags": [
+            "Plugin",
+            "Python",
+            "Scanner"
+          ],
+          "description": "Java jQAssistant Plugin for Python. It enables jQAssistant to scan and to analyze Python related artifacts.",
+          "maintainedBy": "SoftVisResearch",
+          "url": "https://github.com/softvis-research/jqa-python-plugin",
+          "status": "Development"
+        },
+        {
+          "name": "PHP Plugin",
+          "tags": [
+            "Plugin",
+            "PHP",
+            "Scanner",
+            "Web"
+          ],
+          "description": "This is a php parser for jQAssistant. It enables jQAssistant to scan and to analyze php files.",
+          "maintainedBy": "SoftVisResearch",
+          "url": "https://github.com/softvis-research/jqa-php-plugin",
+          "status": "Stable"
+        },
+        {
+          "name": "JavaScript Plugin",
+          "tags": [
+            "Plugin",
+            "JavaScript",
+            "Scanner",
+            "Web"
+          ],
+          "description": "This is a JavaScript parser for jQAssistant. It enables jQAssistant to scan and to analyze JavaScript files.",
+          "maintainedBy": "SoftVisResearch",
+          "url": "https://github.com/softvis-research/jqa-javascript-plugin",
+          "status": "Development"
+        },
+        {
+          "name": "C Plugin",
+          "tags": [
+            "Plugin",
+            "C",
+            "Scanner",
+            "Typechef"
+          ],
+          "description": "This is a jQAssistant plugin to parse C AST files that were generated by Typechef.",
+          "maintainedBy": "SoftVisResearch",
+          "url": "https://github.com/softvis-research/jqa-c-plugin",
+          "status": "Development"
+        },
+        {
+          "name": "PL/SQL Plugin",
+          "tags": [
+            "Plugin",
+            "PL/SQL",
+            "Scanner"
+          ],
+          "description": "This is a PL/SQL parser for jQAssistant. It enables jQAssistant to scan and to analyze PL/SQL files.",
+          "maintainedBy": "SoftVisResearch",
+          "url": "https://github.com/softvis-research/jqa-plsql-plugin",
+          "status": "Development"
+        },
+        {
+          "name": "GitHub-Issues Plugin",
+          "tags": [
+            "Plugin",
+            "GitHub",
+            "Issue",
+            "Project Management",
+            "Web",
+            "Scanner"
+          ],
+          "description": "This is a GitHub issue scanner for jQAssistant. It enables jQAssistant to scan and analyze GitHub issues.",
+          "maintainedBy": "SoftVisResearch",
+          "url": "https://github.com/softvis-research/jqa-githubissues-plugin",
+          "status": "Stable",
+          "downloads": [
+            {
+              "jqassistantVersion": "1.4.0",
+              "url": "https://github.com/softvis-research/jqa-githubissues-plugin/releases/download/v0.2/jqa-githubissues-plugin-0.2.jar"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "maintainers": {
+    "jQACore": {
+      "name": "jQAssistant Core Team",
+      "website": "http://jQAssistant.org"
+    },
+    "SoftVisResearch": {
+      "name": "Visual Software Analytics Research Group at Leipzig University",
+      "website": "https://github.com/softvis-research"
+    }
+  },
+  "placeholders": {
+    "jQACoreVersion": "1.6.0"
+  }
+}
