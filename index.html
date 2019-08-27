@@ -55,6 +55,7 @@
         <thead>
         <tr>
             <th>Name</th>
+            <th>Compatible With</th>
             <th>Latest Version</th>
         </tr>
         </thead>
@@ -62,6 +63,10 @@
         <tr ng-repeat="plugin in project.entries | orderBy:'name'">
             <td>
                 <a target="_blank" href="{{plugin.url}}">{{plugin.name}}</a>
+            </td>
+            <td>
+                <p ng-if="plugin.downloads">jQAssistant {{plugin.downloads[0].jqassistantVersion}}</p>
+                <p ng-if="!plugin.downloads">-</p>
             </td>
             <td>
                 <a ng-if="plugin.downloads" href="{{plugin.downloads[0].url}}">{{plugin.downloads[0].url}}</a>
