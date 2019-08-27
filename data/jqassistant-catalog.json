@@ -39,7 +39,11 @@
           "description": "This is a Jira parser for jQAssistant. It enables jQAssistant to scan and to analyze data from Jira.",
           "maintainedBy": "SoftVisResearch",
           "url": "https://github.com/softvis-research/jqa-jira-plugin",
-          "status": "Stable"
+          "status": "Stable",
+          "downloads": [{
+            "jqassistantVersion": "1.6.0",
+            "url": "https://github.com/softvis-research/jqa-jira-plugin/releases/download/v0.1/jqa-jira-plugin-0.1.jar"
+          }]
         },
         {
           "name": "Python Plugin",
