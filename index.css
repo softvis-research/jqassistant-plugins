@@ -8,6 +8,11 @@ body #icon {
   height: auto;
   margin-bottom: 30px;
 }
+body #jqa-logo {
+  height: 100px;
+  width: auto;
+  float: right;
+}
 body h1 {
   margin-bottom: 50px;
 }
@@ -105,6 +110,14 @@ footer li {
 .plugin-section li:before {
   content: "-";
   padding-right: 10px;
+}
+
+.overview-section {
+  padding-bottom: 50px;
+}
+.overview-section table p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=index.css.map */

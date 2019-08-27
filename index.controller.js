@@ -12,6 +12,8 @@ angular.module('softvisApp').controller('indexController', ['$scope', '$http', '
 
             $scope.tags = resolveTags(data.plugins);
 
+            $scope.placeholders = data.placeholders;
+
         });
 
         $scope.loadTags = function (query) {
@@ -113,5 +115,16 @@ angular.module('softvisApp').controller('indexController', ['$scope', '$http', '
             });
         }
 
+        $scope.applyPlaceholders = function(text) {
 
-    }]);
+            for (var property in $scope.placeholders) {
+                if ($scope.placeholders.hasOwnProperty(property)) {
+
+                    text = text.replace("${" + property + "}", $scope.placeholders[property]);
+                }
+            }
+
+            return text;
+        }
+
+}]);

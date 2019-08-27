@@ -1,45 +1,12 @@
 {
   "plugins": [
     {
-      "name": "jQAssistant Core Distribution",
-      "description": "",
-      "entries": [
-        {
-          "name": "Java Plugin",
-          "description": "Provides scanners and rules for Java Bytecode.",
-          "tags": [
-            "Plugin",
-            "Java",
-            "ByteCode",
-            "Scanner",
-            "Rules"
-          ],
-          "url": "http://buschmais.github.io/jqassistant/doc/${jQACoreVersion}/#_java_plugin",
-          "maintainedBy": "jQACore",
-          "status": "Stable"
-        },
-        {
-          "name": "XML Plugin",
-          "tags": [
-            "Plugin",
-            "Scanner",
-            "XML"
-          ],
-          "description": "Provides scanners for XML documents",
-          "url": "http://buschmais.github.io/jqassistant/doc/${jQACoreVersion}/#_xml_plugin",
-          "maintainedBy": "jQACore",
-          "status": "Stable"
-        }
-      ]
-    },
-    {
       "name": "jQAssistant Contribution Project",
       "description": "The research group \"Visual Software Analytics\" develops and evaluates tools for exploring complex software systems in 2D, 3D and virtual reality. We combine findings and methods from the fields of software analytics, software visualization, data science, and empirical software engineering to extract, visualize, and analyze software-related data. All tools, such as Getaviz or jQA-Dashboard, are available as open source.",
       "entries": [
         {
           "name": "Java Source Plugin",
           "tags": [
-            "Plugin",
             "Java",
             "Source",
             "Scanner"
@@ -52,7 +19,6 @@
         {
           "name": "Kieker Plugin",
           "tags": [
-            "Plugin",
             "Kieker",
             "Stacktrace",
             "Scanner"
@@ -65,7 +31,6 @@
         {
           "name": "Jira Plugin",
           "tags": [
-            "Plugin",
             "Jira",
             "Project Management",
             "Issue",
@@ -77,22 +42,8 @@
           "status": "Stable"
         },
         {
-          "name": "jQAssistant Dashboard",
-          "tags": [
-            "Dashboard",
-            "UI",
-            "Visualisation",
-            "Analysis"
-          ],
-          "description": "Dashboard for analyzing and visualizing software artifacts' data scanned with jQAssistant and stored in a Neo4j graph database.",
-          "maintainedBy": "SoftVisResearch",
-          "url": "https://github.com/softvis-research/jqa-dashboard",
-          "status": "Stable"
-        },
-        {
           "name": "Python Plugin",
           "tags": [
-            "Plugin",
             "Python",
             "Scanner"
           ],
@@ -104,7 +55,6 @@
         {
           "name": "PHP Plugin",
           "tags": [
-            "Plugin",
             "PHP",
             "Scanner",
             "Web"
@@ -117,7 +67,6 @@
         {
           "name": "JavaScript Plugin",
           "tags": [
-            "Plugin",
             "JavaScript",
             "Scanner",
             "Web"
@@ -130,7 +79,6 @@
         {
           "name": "C Plugin",
           "tags": [
-            "Plugin",
             "C",
             "Scanner",
             "Typechef"
@@ -143,7 +91,6 @@
         {
           "name": "PL/SQL Plugin",
           "tags": [
-            "Plugin",
             "PL/SQL",
             "Scanner"
           ],
@@ -155,7 +102,6 @@
         {
           "name": "GitHub-Issues Plugin",
           "tags": [
-            "Plugin",
             "GitHub",
             "Issue",
             "Project Management",
