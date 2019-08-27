@@ -2,7 +2,6 @@ angular.module('softvisApp').controller('indexController', ['$scope', '$http', '
     function ($scope, $http, $q) {
 
         $http.get('data/jqassistant-catalog.json').then(function (response) {
-            console.log(response.data);
 
             var data = response.data;
 
@@ -26,20 +25,39 @@ angular.module('softvisApp').controller('indexController', ['$scope', '$http', '
 
         $scope.$watch('selectedTags', function (newValue, oldValue) {
 
-            if (!newValue || newValue.length === 0) {
-                $scope.filteredPlugins = $scope.plugins;
-                return;
+            applyFilters();
+        }, true);
+
+        $scope.stableVersionsOnlyFilterHasChanged = function () {
+
+            applyFilters();
+        };
+
+        function applyFilters() {
+
+            $scope.filteredPlugins = angular.copy($scope.plugins);
+
+            if ($scope.selectedTags && $scope.selectedTags.length > 0) {
+                $scope.filteredPlugins = applyTagsFilter();
             }
 
-            var tags = _.map(newValue, function (tagWrapper) {
+            if ($scope.stableVersionsOnly) {
+                $scope.filteredPlugins = applyStableVersionsOnlyFilter($scope.filteredPlugins);
+            }
+
+        }
+
+        function applyTagsFilter() {
+
+            var tags = _.map($scope.selectedTags, function (tagWrapper) {
                 return tagWrapper.text;
             });
 
             var projects = angular.copy($scope.plugins);
 
-            $scope.filteredPlugins = _.filter(projects, function (project) {
+            return _.filter(projects, function (project) {
 
-                var plugins = _.filter(project.entries, function(plugin) {
+                var plugins = _.filter(project.entries, function (plugin) {
                     return _.intersection(plugin.tags, tags).length === tags.length;
                 });
 
@@ -47,7 +65,21 @@ angular.module('softvisApp').controller('indexController', ['$scope', '$http', '
 
                 return plugins.length > 0;
             });
-        }, true);
+        }
+
+        function applyStableVersionsOnlyFilter(projects) {
+
+            return _.filter(projects, function (project) {
+
+                var plugins = _.filter(project.entries, function (plugin) {
+                    return plugin.status === "Stable";
+                });
+
+                project.entries = plugins;
+
+                return plugins.length > 0;
+            });
+        }
 
         function resolvePlugins(projects, maintainers) {
 

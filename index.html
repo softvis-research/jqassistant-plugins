@@ -49,7 +49,10 @@
             <auto-complete source="loadTags($query)" min-length="1"></auto-complete>
         </tags-input>
     </div>
-
+    <div class="form-check" style="margin-top: 20px">
+        <input ng-model="stableVersionsOnly" ng-change="stableVersionsOnlyFilterHasChanged()" type="checkbox" class="form-check-input" id="stable-versions-only-checkbox">
+        <label class="form-check-label" for="stable-versions-only-checkbox">Stable versions only</label>
+    </div>
 </section>
 
 <section id="plugin-section" class="plugin-section">
