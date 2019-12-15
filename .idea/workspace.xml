@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ef68a24-6b74-4936-9232-73e3e890f1de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/jqassistant-catalog.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/jqassistant-catalog.json" afterDir="false" />
     </list>
@@ -10,14 +9,6 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>data</find>
-      <find>console</find>
-      <find>&quot;Plugin&quot;,</find>
-      <find>github</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -81,7 +72,7 @@
       <workItem from="1566937654736" duration="1187000" />
       <workItem from="1575217146726" duration="246000" />
       <workItem from="1575229619040" duration="10000" />
-      <workItem from="1576430260840" duration="66000" />
+      <workItem from="1576430260840" duration="419000" />
     </task>
     <servers />
   </component>

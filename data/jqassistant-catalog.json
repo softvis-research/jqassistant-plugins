@@ -61,7 +61,11 @@
           "description": "Java jQAssistant Plugin for Python. It enables jQAssistant to scan and to analyze Python related artifacts.",
           "maintainedBy": "SoftVisResearch",
           "url": "https://github.com/softvis-research/jqa-python-plugin",
-          "status": "Development"
+          "status": "Development",
+          "downloads": [{
+            "jqassistantVersion": "1.6.0",
+            "url": "https://github.com/softvis-research/jqa-python-plugin/releases/download/0.0.2/jqa-python-plugin-0.0.2.jar"
+          }]
         },
         {
           "name": "PHP Plugin",
