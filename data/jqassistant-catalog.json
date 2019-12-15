@@ -73,7 +73,13 @@
           "description": "This is a php parser for jQAssistant. It enables jQAssistant to scan and to analyze php files.",
           "maintainedBy": "SoftVisResearch",
           "url": "https://github.com/softvis-research/jqa-php-plugin",
-          "status": "Stable"
+          "status": "Stable",
+          "downloads": [
+            {
+              "jqassistantVersion": "1.7.0",
+              "url": "https://github.com/softvis-research/jqa-php-plugin/releases/download/v0.0.11/jqa-php-plugin-0.0.11.jar"
+            }
+          ]
         },
         {
           "name": "JavaScript Plugin",
