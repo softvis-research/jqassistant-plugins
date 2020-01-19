@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ef68a24-6b74-4936-9232-73e3e890f1de" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/jqassistant-catalog.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/jqassistant-catalog.json" afterDir="false" />
     </list>
@@ -22,6 +23,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="NewWatcherDialog.advanced.open" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -72,7 +74,8 @@
       <workItem from="1566937654736" duration="1187000" />
       <workItem from="1575217146726" duration="246000" />
       <workItem from="1575229619040" duration="10000" />
-      <workItem from="1576430260840" duration="419000" />
+      <workItem from="1576430260840" duration="1162000" />
+      <workItem from="1579453176244" duration="240000" />
     </task>
     <servers />
   </component>
@@ -84,10 +87,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="999" y="388" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1576430308951" />
-    <state x="1060" y="454" key="FileChooserDialogImpl" timestamp="1575229626792">
+    <state x="1060" y="454" key="FileChooserDialogImpl" timestamp="1576430822491">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1060" y="454" key="FileChooserDialogImpl/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1575229626792" />
+    <state x="1060" y="454" key="FileChooserDialogImpl/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1576430822491" />
     <state x="3216" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1575229619053">
       <screen x="2560" y="0" width="1920" height="1040" />
     </state>

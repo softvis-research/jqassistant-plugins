@@ -130,7 +130,13 @@
           "description": "This is a PL/SQL parser for jQAssistant. It enables jQAssistant to scan and to analyze PL/SQL files.",
           "maintainedBy": "SoftVisResearch",
           "url": "https://github.com/softvis-research/jqa-plsql-plugin",
-          "status": "Development"
+          "status": "Development",
+          "downloads": [
+            {
+              "jqassistantVersion": "1.7.0",
+              "url": "https://github.com/softvis-research/jqa-plsql-plugin/releases/download/v0.0.1/jqa-plsql-plugin-0.0.1.jar"
+            }
+          ]
         },
         {
           "name": "GitHub-Issues Plugin",
