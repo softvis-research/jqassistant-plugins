@@ -105,6 +105,9 @@
           "status": "Development",
           "downloads": [
             {
+              "jqassistantVersion": "1.7.0",
+              "url": "https://github.com/softvis-research/jqa-javascript-plugin/releases/download/v0.0.2/jqassistant-javascript-plugin-0.0.2.jar"
+            }, {
               "jqassistantVersion": "1.6.0",
               "url": "https://github.com/softvis-research/jqa-javascript-plugin/releases/download/0.0.1/jqassistant-javascript-plugin-0.0.1.jar"
             }
