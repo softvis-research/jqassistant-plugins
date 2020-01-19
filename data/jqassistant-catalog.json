@@ -63,6 +63,9 @@
           "url": "https://github.com/softvis-research/jqa-python-plugin",
           "status": "Development",
           "downloads": [{
+            "jqassistantVersion": "1.7.0",
+            "url": "https://github.com/softvis-research/jqa-python-plugin/releases/download/v0.0.3/jqa-python-plugin-0.0.3.jar"
+          }, {
             "jqassistantVersion": "1.6.0",
             "url": "https://github.com/softvis-research/jqa-python-plugin/releases/download/0.0.2/jqa-python-plugin-0.0.2.jar"
           }]
