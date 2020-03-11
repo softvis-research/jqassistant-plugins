@@ -163,6 +163,10 @@
           "status": "Stable",
           "downloads": [
             {
+              "jqassistantVersion": "1.8.0",
+              "url": "https://github.com/softvis-research/jqa-githubissues-plugin/releases/download/v0.0.5/jqa-githubissues-plugin-0.0.5.jar"
+            },
+            {
               "jqassistantVersion": "1.7.0",
               "url": "https://github.com/softvis-research/jqa-githubissues-plugin/releases/download/v0.0.4/jqa-githubissues-plugin-0.0.4.jar"
             },
