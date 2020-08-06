@@ -42,13 +42,17 @@
             "Jira",
             "Project Management",
             "Issue",
-            "Scanner"
+            "Scanner",
+            "Atlassian"
           ],
           "description": "This is a Jira parser for jQAssistant. It enables jQAssistant to scan and to analyze data from Jira.",
           "maintainedBy": "SoftVisResearch",
           "url": "https://github.com/softvis-research/jqa-jira-plugin",
           "status": "Stable",
           "downloads": [{
+            "jqassistantVersion": "1.8.0",
+            "url": "https://github.com/softvis-research/jqa-jira-plugin/releases/download/v0.0.3/jqa-jira-plugin-0.0.3.jar"
+          },{
             "jqassistantVersion": "1.7.0",
             "url": "https://github.com/softvis-research/jqa-jira-plugin/releases/download/v0.0.2/jqa-jira-plugin-0.0.2.jar"
           }, {
