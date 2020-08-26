@@ -30,8 +30,11 @@
           "description": "This is a stack trace parser for jQAssistant. It enables jQAssistant to scan and to analyze Kieker trace event logs.",
           "maintainedBy": "SoftVisResearch",
           "url": "https://github.com/softvis-research/jqa-kieker-plugin",
-          "status": "Development",
+          "status": "Stable",
           "downloads": [{
+            "jqassistantVersion": "1.8.0",
+            "url": "https://github.com/softvis-research/jqa-kieker-plugin/releases/download/v1.0.0/jqa-kieker-plugin-1.0.0.jar"
+          },{
             "jqassistantVersion": "1.7.0",
             "url": "https://github.com/softvis-research/jqa-kieker-plugin/releases/download/v0.0.1/jqa-kieker-plugin-0.0.1.jar"
           }]
