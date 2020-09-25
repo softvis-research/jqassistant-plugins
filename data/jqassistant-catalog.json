@@ -64,6 +64,22 @@
           }]
         },
         {
+          "name": "C# Plugin",
+          "tags": [
+            "C#",
+            ".NET",
+            "Scanner"
+          ],
+          "description": "This is a C# parser for jQAssistant. It enables jQAssistant to scan and to analyze C# files.",
+          "maintainedBy": "SoftVisResearch",
+          "url": "https://github.com/softvis-research/jqa-csharp-plugin",
+          "status": "Stable",
+          "downloads": [{
+            "jqassistantVersion": "1.8.0",
+            "url": "https://github.com/softvis-research/jqa-csharp-plugin/releases/download/v0.1.2-alpha/jqa-csharp-plugin-0.1.2.jar"
+          }]
+        },
+        {
           "name": "Python Plugin",
           "tags": [
             "Python",
